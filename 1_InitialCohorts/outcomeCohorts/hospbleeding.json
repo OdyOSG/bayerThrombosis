@@ -4995,10 +4995,10 @@
     }
   },
   "QualifiedLimit": {
-    "Type": "First"
+    "Type": "All"
   },
   "ExpressionLimit": {
-    "Type": "First"
+    "Type": "All"
   },
   "InclusionRules": [],
   "CensoringCriteria": [
