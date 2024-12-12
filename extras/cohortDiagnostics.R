@@ -25,7 +25,7 @@ usethis::use_git_ignore("cohortDiagnostics")
 scratchDiagnosticsFolder <- fs::path_abs("cohortDiagnostics/scratchDiagnostics") %>% fs::dir_create()
 
 ## Path to sqlite database
-sqlLiteDbPath <- fs::path(scratchDiagnosticsFolder, glue::glue("finerod"), ext = "sqlite")
+sqlLiteDbPath <- fs::path(scratchDiagnosticsFolder, glue::glue("thrombosis"), ext = "sqlite")
 
 ## Create merged results file i.e. sqlite database file
 CohortDiagnostics::createMergedResultsFile(dataFolder = cohortDiagnosticsZipFiles, 
@@ -34,14 +34,14 @@ CohortDiagnostics::createMergedResultsFile(dataFolder = cohortDiagnosticsZipFile
 
 ## Launch diagnostics
 CohortDiagnostics::launchDiagnosticsExplorer(sqliteDbPath = sqlLiteDbPath,
-                                             publishDir = file.path(here::here("cohortDiagnostics/cohortDiagnostics_051224")),
+                                             publishDir = file.path(here::here("cohortDiagnostics/cohortDiagnostics_<DATE>")),
                                              overwritePublishDir = TRUE,
                                              makePublishable = TRUE
                                              )
 
 
 ## Create DiagnosticsExplorer R shiny package (Optional)
-# CohortDiagnostics::createDiagnosticsExplorerZip(outputZipfile = here::here("cohortDiagnostics/cohortDiagnostics_finerod.zip"),
+# CohortDiagnostics::createDiagnosticsExplorerZip(outputZipfile = here::here("cohortDiagnostics/cohortDiagnostics_thrombosis.zip"),
 #                                                 sqliteDbPath = sqlLiteDbPath,
 #                                                 overwrite = TRUE)
 
