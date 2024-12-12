@@ -1,0 +1,14 @@
+baselineCharacteristics:
+  cohorts:
+    targetCohorts:
+    - name: finerenone
+      id: 1
+    covariateCohorts:
+    - name: acetaminophen
+      id: 2
+    - name: alcohol_abuse
+      id: 3
+  timeWindows:
+  - startDay: -365
+    endDay: 0.0
+  outputFolder: 03_baselineCharacteristics

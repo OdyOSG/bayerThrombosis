@@ -1,0 +1,18 @@
+baselineCharacteristics:
+  cohorts:
+    targetCohorts:
+    - name: finerenone
+      id: 1
+    - name: f_aceis
+      id: 9
+    - name: f_hf
+      id: 10
+    covariateCohorts:
+    - name: amputation
+      id: 2
+    - name: gout
+      id: 3
+  timeWindows:
+  - startDay: -365
+    endDay: 0.0
+  outputFolder: 03_baselineCharacteristics

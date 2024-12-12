@@ -1,0 +1,20 @@
+baselineCharacteristics:
+  cohorts:
+    targetCohorts:
+    - name: finerenone
+      id: 1
+    - name: f_aceis
+      id: 9
+    - name: f_hf
+      id: 10
+    covariateCohorts:
+    - name: acetaminophen
+      id: 4
+    - name: calcium_channel_blockers
+      id: 5
+    - name: mitiglinide
+      id: 6
+  timeWindows:
+  - startDay: -180
+    endDay: 0.0
+  outputFolder: 03_baselineCharacteristics180

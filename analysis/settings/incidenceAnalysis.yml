@@ -1,0 +1,32 @@
+incidenceAnalysis:
+  cohorts:
+    numeratorCohorts:
+    - name: ami
+      id: 2
+    - name: ami_hf
+      id: 3
+    - name: hf
+      id: 4
+    - name: hf_hosp
+      id: 5
+    - name: hyperkalemia
+      id: 6
+    - name: hyperkalemia_sensitivity
+      id: 7
+    - name: kidney_failure
+      id: 8
+    - name: potassium_gt_55
+      id: 9
+    - name: potassium_gt_6
+      id: 10
+    denominatorCohorts:
+    - name: finerenone
+      id: 1
+  incidenceSettings:
+    sex: Both
+    interval:
+    - years
+    - overall
+    completeDatabaseIntervals: no
+    cellCount: 5
+  outputFolder: 04_incidenceAnalysis
